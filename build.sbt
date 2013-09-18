@@ -18,21 +18,31 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
+        "io.spray"            %   "spray-io"                  % "1.2-M8",
+    	"io.spray"            %   "spray-can"                 % "1.2-M8",
+    	"io.spray"            %   "spray-routing"             % "1.2-M8",
+    	"io.spray"            %   "spray-caching"             % "1.2-M8",
+    	"io.spray"            %   "spray-http"                % "1.2-M8",
+    	"io.spray" 	          %   "spray-testkit" 	          % "1.2-M8",
+    	"io.spray"            %   "spray-util"                % "1.2-M8",
         "com.typesafe.akka"   %%  "akka-actor"                % "2.2.0-RC1",
         "com.typesafe.akka"   %%  "akka-testkit"              % "2.2.0-RC1",
         "com.typesafe.akka"   %%  "akka-transactor"           % "2.2.0-RC1",
-  	"com.typesafe"        %   "config"                    % "1.0.0",
-  	"com.typesafe"        %   "slick_2.10.0-RC2"          % "0.11.2",
-  	"com.h2database"      %   "h2" 			              % "1.3.170",
-  	"io.spray"            %   "spray-json_2.10"           % "1.2.3",
-  	"org.xerial" 	      %   "sqlite-jdbc" 	          % "3.6.20",
-  	"joda-time"			  %   "joda-time"				  % "2.2",
-  	"org.joda" 	 	  	  %   "joda-convert" 			  % "1.3.1",
-  	"org.scalatest"       %   "scalatest_2.10"            % "1.9.1"   % "test",
+      	"com.typesafe"        %   "config"                    % "1.0.0",
+      	"com.typesafe"        %   "slick_2.10.0-RC2"          % "0.11.2",
+      	"com.h2database"      %   "h2" 			              % "1.3.170",
+      	"io.spray"            %   "spray-json_2.10"           % "1.2.3",
+      	"org.xerial" 	      %   "sqlite-jdbc" 	          % "3.6.20",
+      	"joda-time"			  %   "joda-time"				  % "2.2",
+      	"org.joda" 	 	  	  %   "joda-convert" 			  % "1.3.1",
+      	"org.scalatest"       %   "scalatest_2.10"            % "1.9.1"   % "test",
         "org.specs2"          %%  "specs2"                    % "1.13"    % "test",
         "c3p0"                %   "c3p0"                      % "0.9.1.2",
-        "com.typesafe"    %%  "scalalogging-slf4j"	      % "1.0.1",
-        "ch.qos.logback"      %   "logback-classic"           % "1.0.3"
+        "com.typesafe"		  %%  "scalalogging-slf4j"	      % "1.0.1",
+        "ch.qos.logback"      %   "logback-classic"           % "1.0.3",
+        "org.quartz-scheduler"%   "quartz"                    % "2.2.0",
+        "org.quartz-scheduler"%   "quartz-jobs"               % "2.2.0",
+        "mysql"               %   "mysql-connector-java"    % "5.1.24"
 )
 
 seq(Revolver.settings: _*)
