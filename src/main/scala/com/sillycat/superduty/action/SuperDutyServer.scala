@@ -54,6 +54,6 @@ trait SuperDutyConnector extends HttpService
   }
 
   val baseRoute = {
-    proxyRoutes(1)
+    proxyRoutes()
   }
 }

@@ -1,5 +1,7 @@
 package com.sillycat.superduty.action
 
+import com.sillycat.superduty.service.MessageService
+
 /**
  * Created with IntelliJ IDEA.
  * User: carl
@@ -9,11 +11,14 @@ package com.sillycat.superduty.action
  */
 trait SchedulerRouter extends BaseRouter {
 
-  def proxyRoutes(version: Int) = {
+  def proxyRoutes() = {
     path("scheduler") {
       get {
         complete {
-          "test"
+          Range(1, 5, 1).foreach { num =>
+            MessageService.storePushNotification(num.toString + "sillycat_store", 1000)
+          }
+          "Send the Job Success."
         }
       }
     }
