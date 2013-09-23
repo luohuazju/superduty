@@ -7,6 +7,7 @@ class SendMessageJob extends Job with Logging {
 
   def execute(context: JobExecutionContext) =
     {
+      //TODO Send the message based on PushNotification Project
       Thread.sleep(10 * 1000)
       val subJobNum = context.getJobDetail.getJobDataMap.getString("SUB_JOB_NUM")
       logger.debug("I am doing the Send Message job. ClassName = " + this.getClass.getName + " dollars in your account = " + subJobNum)

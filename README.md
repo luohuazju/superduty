@@ -1,3 +1,2 @@
-superduty
-=========
-Document will be here.
+Draft Demo
+[Documents](https://github.com/luohuazju/superduty/wiki)

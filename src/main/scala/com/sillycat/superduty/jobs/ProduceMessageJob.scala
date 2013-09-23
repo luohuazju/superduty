@@ -16,6 +16,11 @@ class ProduceMessageJob extends Job with Logging {
       val jobNum = context.getJobDetail.getJobDataMap.getString("JOB_NUM")
       val subJobClassName = context.getJobDetail.getJobDataMap.getString("SUB_JOB_CLASS_NAME")
 
+      //TODO 1. load the devices from DB based on GUTS
+      //TODO 2. filter the devices by profile based on GUTS
+      //TODO 3. Some logic to create meaningful names of "Send Message Job",
+      //TODO    then the creating task can be picked up where the system fails
+
       Range(1, jobNum.toInt, 1).foreach { num =>
         val subJob = campaignName + num
         SchedulerService.getScheduler().checkExists(new JobKey(subJob)) match {
