@@ -42,7 +42,9 @@ libraryDependencies ++= Seq(
         "ch.qos.logback"      %   "logback-classic"           % "1.0.3",
         "org.quartz-scheduler"%   "quartz"                    % "2.2.0",
         "org.quartz-scheduler"%   "quartz-jobs"               % "2.2.0",
-        "mysql"               %   "mysql-connector-java"    % "5.1.24"
+        "mysql"               %   "mysql-connector-java"      % "5.1.24",
+        "com.rabbitmq"        %   "amqp-client"               % "3.1.4",
+        "com.101tec"          %   "zkclient"                  % "0.3"
 )
 
 seq(Revolver.settings: _*)
