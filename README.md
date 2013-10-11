@@ -12,3 +12,7 @@ run the rabbitmq example
 
 
 >sbt 'run-main com.sillycat.superduty.jobs.producer.NewTaskRabbitMQ'
+
+run the kafka example
+>sbt 'run-main com.sillycat.superduty.jobs.producer.NewTaskKafka'
+>sbt 'run-main com.sillycat.superduty.jobs.consumer.WorkerKafka'

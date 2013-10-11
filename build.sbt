@@ -14,7 +14,8 @@ resolvers ++= Seq(
 	"sonatype releases"  at "https://oss.sonatype.org/content/repositories/releases/",
   	"sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
   	"typesafe repo"      at "http://repo.typesafe.com/typesafe/releases/",
-  	"spray repo"         at "http://repo.spray.io/"
+  	"spray repo"         at "http://repo.spray.io/",
+  	"maven repo"         at "http://repo1.maven.org/maven2/"
 )
 
 libraryDependencies ++= Seq(
@@ -44,6 +45,8 @@ libraryDependencies ++= Seq(
         "org.quartz-scheduler"%   "quartz-jobs"               % "2.2.0",
         "mysql"               %   "mysql-connector-java"      % "5.1.24",
         "com.rabbitmq"        %   "amqp-client"               % "3.1.4",
+        //"org.apache.kafka"    %   "kafka_2.9.2"               % "0.8.0-beta1",
+        "com.twitter"         %%  "util-collection"           % "6.3.6",
         "com.101tec"          %   "zkclient"                  % "0.3"
 )
 
