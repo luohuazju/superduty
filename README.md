@@ -2,6 +2,8 @@ Draft Demo
 
 [Documents](https://github.com/luohuazju/superduty/wiki)
 
+[Campaign Message Center Design](https://github.com/luohuazju/superduty/wiki/Campaign-Message-Center-Design)
+
 run the rabbitmq example
 
 >sudo sbin/rabbitmq-server
