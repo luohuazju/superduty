@@ -4,6 +4,8 @@ Draft Demo
 
 [Campaign Message Center Design](https://github.com/luohuazju/superduty/wiki/Campaign-Message-Center-Design)
 
+[Persist Schedule Job Design](https://github.com/luohuazju/superduty/wiki/Quartz-Schedule-Draft-Design)
+
 run the rabbitmq example
 
 >sudo sbin/rabbitmq-server
